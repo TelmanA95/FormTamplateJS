@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding:  0 30px; */
+}
+
+.image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+}
+
+.container .logInContainer {
+  width: calc(100% / 2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #525252;
+}
+
+.title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #525252;
+}
+.google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #525252;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 25px 0;
+  color: #828282;
+}
+.google img {
+  margin-right: 10px;
+}
+.sign {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #dddddd;
+  font-weight: 600;
+}
+.logInAcc {
+  max-width: 500px;
+  min-height: 505px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container form {
+  width: 100%;
+  height: 100%;
+}
+.emailTitle {
+  color: #828282;
+}
+.pswTitle {
+  color: #828282;
+}
+.email {
+  margin-bottom: 25px;
+  border-radius: 6px;
+  width: 100%;
+  padding: 13px 10px 12px;
+  border-color: #dddddd;
+}
+.psw {
+  border-radius: 6px;
+  width: 100%;
+  padding: 13px 10px 12px;
+  border-color: #dddddd;
+}
+
+.forgot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.check input {
+  accent-color: #7f265b;
+}
+.forgotpsw p {
+  color: #7f265b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.check p {
+  color: #a1a1a1;
+  margin-left: 5px;
+}
+.createAcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+.logInBtn {
+  width: 100%;
+  background-color: #7f265b;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  margin-top: 25px;
+  padding: 13px 10px 12px;
+  cursor: pointer;
+}
+.createAcc {
+  margin-top: 30px;
+}
+.createAcc a {
+  margin-left: 5px;
+  color: #7f265b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 910px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .logInContainer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .sign {
+    color: #7f265b;
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .createAcc {
+    flex-direction: column;
+    line-height: 2;
+  }
+  .forgot {
+    flex-direction: column;
+    line-height: 2;
+  }
+
+  .image img {
+    border-radius: 0;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    opacity: 0.6;
+    object-fit: cover;
+  }
+}
+
+.email.error {
+  border-color: red;
+}
+
+.psw.error {
+  border-color: red;
+}
+#errorEmail {
+  color: red;
+}
+#errorPsw {
+  color: red;
+}
